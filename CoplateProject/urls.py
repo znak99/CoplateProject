@@ -21,6 +21,7 @@ urlpatterns = [
         TemplateView.as_view(template_name='account/email_confirmation_done.html'),
         name='account_email_confirmation_done',
     ),
+    
     path('password/change/', CustomPasswordChangeView.as_view(), name="account_password_change"),
     path('', include('allauth.urls')),
 ]
